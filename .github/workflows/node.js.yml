@@ -27,7 +27,4 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm test
-    - name: Perform ShiftLeft Scan
-      uses: ShiftLeftSecurity/scan-action@master
-      with:
-        type: "credscan,javascript,depscan"
+
