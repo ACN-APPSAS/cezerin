@@ -3,12 +3,7 @@
 name: Analyze with ShiftLeft Inspect
 
 on:
-  push: # include to analyze when you push
-    branches:
-      - master
-  pull_request: # include to analyze when you create a pull request
-    branches:
-      - master
+  workflow_dispatch:
 
 jobs:
   Inspect-Build:
